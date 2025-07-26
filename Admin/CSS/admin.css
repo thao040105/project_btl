@@ -1,0 +1,39 @@
+body { background: #f8f9fa; }
+        .sidebar {
+            min-height: 100vh;
+            background: #FFF5D7;
+            width: 240px;
+            padding: 24px 12px 24px 12px;
+        }
+        .sidebar .nav-link {
+            color: #ec081f;
+            font-weight: 500;
+            font-size: 1.05rem;
+            padding: 10px 16px;
+            border-radius: 6px;
+        }
+        .sidebar .nav-link.active, .sidebar .nav-link:hover {
+            background: #ffe6b3;
+            color: #f8041d;
+        }
+        .btn-toggle-nav .nav-link:hover,
+.btn-toggle-nav .nav-link:focus,
+.btn-toggle-nav .nav-link.active {
+    background: rgba(255,255,255,0.08); /* nền trắng mờ nhẹ, hoặc dùng transparent */
+    color: #fff !important;
+    transition: background 0.2s;
+}
+        .sidebar .nav-link i {
+            margin-right: 8px;
+        }
+        .sidebar .collapse .nav-link {
+            padding-left: 32px;
+            font-size: 0.98rem;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                min-height: auto;
+                position: static;
+            }
+        }
