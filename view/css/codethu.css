@@ -1,0 +1,298 @@
+/* Box-menu */
+.box-menu {
+    font-size: 12px;
+    background-color: white;
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgb(59, 110, 57);
+}
+
+.box-menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.box-menu ul li {
+    margin: 0 15px;
+    padding: 15px;
+    position: relative;
+}
+
+.box-menu ul li a {
+    font-size: 12px;
+    color: rgb(11, 11, 11);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* Hover màu sắc để dễ nhìn hơn */
+.box-menu ul li:hover a {
+    color: #335b30;
+}
+
+/* Submenu */
+.box-submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    width: 150px;
+}
+
+/* Hiển thị menu con khi hover */
+.box-menu ul li:hover .box-submenu {
+    display: block;
+}
+
+/* Submenu styling */
+.box-submenu ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.box-submenu ul li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.box-submenu ul li:last-child {
+    border-bottom: none;
+}
+
+.box-submenu ul li a {
+    font-size: 11px;
+    color: #316335;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.box-submenu ul li:hover a {
+    color: #333;
+}
+
+/* Cart icon styling */
+.cart li a {
+    font-size: 18px;
+    color: #316335;
+    transition: color 0.3s;
+}
+
+.cart li:hover a {
+    color: #335b30;
+}
+
+.chu{
+    padding:10px;
+    color:#316335;
+    font-size: 30px;
+}
+.chu1{
+    padding:20px;
+    color:#0e0f0e;
+    font-size: 16px; 
+}
+.highlight {
+    color: #71f45d; /* Màu xanh dương */
+    font-weight: bold;
+}
+.div-container {
+    text-align: center; /* Căn giữa hình ảnh theo chiều ngang */
+}
+
+.div-container img {
+    max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của khung chứa */
+}
+.chu3{
+    padding:10px;
+    color:#0e0f0e;
+    font-size: 16px;
+    text-align: center;
+    font-style: italic;
+}
+.chu4{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+
+.social-share {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-share span {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #b3b3b3; /* Màu nền xám */
+    color: white; /* Màu biểu tượng */
+    text-align: center;
+    line-height: 40px; /* Căn giữa biểu tượng theo chiều dọc */
+    border-radius: 50%;
+    font-size: 20px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background-color: #666; /* Đổi màu khi hover */
+}
+.comment-section {
+    background-color: #ffffff;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.comment-section h2 {
+    color: #2f5d31;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.comment-section .comment-info {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.form-group input {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.submit-btn {
+    background-color: #2f5d31;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #245126;
+}
+.container-fluid {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box; /* Đảm bảo padding không làm ảnh hưởng đến chiều rộng */
+    background-color: white; /* Màu nền cho phần liên hệ */
+    height: auto; /* Tự điều chỉnh chiều cao nếu nội dung thay đổi */
+}
+
+/* Đảm bảo các cột sử dụng đúng kích cỡ và khoảng cách */
+.col-lg-4, .col-md-12 {
+    padding: 15px;
+}
+
+h4 {
+    color: rgb(126, 126, 130);
+    margin-bottom: 10px;
+}
+
+p {
+    
+    margin: 5px 0;
+}
+
+/* Cải thiện input và button */
+input[type="email"] {
+    width: 100%; /* Chiếm toàn bộ chiều rộng của cột */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button.submit-btn {
+    padding: 10px 20px;
+    background-color: rgb(48, 116, 68);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Thêm responsive layout cho thiết bị nhỏ */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Chuyển các cột thành hàng trên màn hình nhỏ */
+    }
+
+    .col-lg-4 {
+        margin-bottom: 20px;
+    }
+
+    input[type="email"], button.submit-btn {
+        width: 100%; /* Đảm bảo các input và button cũng chiếm hết chiều rộng trên màn hình nhỏ */
+    }
+}
+
+.container .col-4 img {
+    width: 100%; /* Ảnh sẽ chiếm toàn bộ chiều rộng của cột */
+}
+.card {
+    width: 100%; /* Thẻ card sẽ chiếm toàn bộ chiều rộng của cột */
+}
+
+#cart-count {
+    position: absolute;
+    top: 30px;
+    right: 257px;
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 6px 8px;
+    /* background-color: red; */
+    color: white;
+    font-weight: bold;
+}
+
